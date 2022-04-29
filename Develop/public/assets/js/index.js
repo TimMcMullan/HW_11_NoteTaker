@@ -1,7 +1,12 @@
+const express = require('express');
+
+// Routers for /notes 
+const notesRouter = require('./notes');
+const tasksRouter = require('/.tasks');
 let noteTitle;
 let noteText;
 let saveNoteBtn;
-let newNoteBtn;
+let newNoteBtn;password: 'roo'
 let noteList;
 
 if (window.location.pathname === '/notes') {
@@ -18,7 +23,7 @@ const show = (elem) => {
 };
 
 // Hide an element
-const hide = (elem) => {
+const hide = (elem) => { 
   elem.style.display = 'none';
 };
 
